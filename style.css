@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+}
+.container{
+    max-width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(4, 199, 4);
+}
+button:active{
+    background-color: rgb(4, 199, 4);
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+#counter{
+    color: #666;
+}
+#counter.increment{
+    color: #0f0;
+    animation: increase 0.5s;
+}
+#counter.decrement{
+    color: #f00;
+    animation: decrease 0.5s;
+}
+@keyframes increase{
+    0%{
+        transition: scale(1.2);
+    }
+    100%{
+        transition: scale(1);
+    }
+}
+@keyframes decrease{
+    0%{
+        transition: scale(1.8);
+    }
+    100%{
+        transition: scale(1);
+    }
+}
